@@ -1,0 +1,10 @@
+snapshots:
+    - name: dim_bookings
+      relation: ref('bookings') #SOURCE MODEL
+      config:
+        schema: gold
+        database: AIRBNB
+        unique_key: BOOKING_ID
+        strategy: timestamp #MOSTLY CREATED_AT IS THE STRATEGY BUT IF WE DONT HAVE DATE COLUMN WE MAY HAVE TO CONSIDER BOOKIND ID OR ANY OTHER COLUMN 
+        updated_at: CREATED_AT
+        dbt_valid_to_current: "to_date('9999-12-31')"

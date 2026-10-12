@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# dbt generated files
+**/target/
+**/dbt_packages/
+**/logs/
+**/partial_parse.msgpack
+
+# Credentials
+**/profiles.yml
+.env
+.env.*
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor
+.vscode/

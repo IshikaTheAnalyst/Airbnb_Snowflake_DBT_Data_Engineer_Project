@@ -1,0 +1,13 @@
+[project]
+name = "my-dbt-snowflake"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core>=1.11.2",
+    "dbt-snowflake>=1.12.0",
+]
+
+[tool.uv]
+package = false
